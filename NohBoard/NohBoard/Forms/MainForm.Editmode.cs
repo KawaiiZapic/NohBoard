@@ -105,6 +105,7 @@ namespace ThoNohT.NohBoard.Forms
         private void mnuToggleEditMode_Click(object sender, EventArgs e)
         {
             this.menuOpen = false;
+            this.borderlessModeToolStripMenuItem.Checked = false;
 
             this.mnuToggleEditMode.Text = this.mnuToggleEditMode.Checked ? "Stop Editing" : "Start Editing";
             this.FormBorderStyle =

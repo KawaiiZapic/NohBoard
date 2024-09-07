@@ -443,6 +443,7 @@ namespace ThoNohT.NohBoard.Forms
             this.mnuElementProperties.Visible = this.mnuToggleEditMode.Checked;
             this.mnuEditKeyboardStyle.Visible = this.mnuToggleEditMode.Checked;
             this.mnuEditElementStyle.Visible = this.mnuToggleEditMode.Checked;
+            this.borderlessModeToolStripMenuItem.Enabled = !this.mnuToggleEditMode.Checked;
             this.MainMenuSep1.Visible = this.mnuToggleEditMode.Checked;
 
             this.mnuSaveStyleToName.Text = $"Save &To '{GlobalSettings.CurrentStyle.Name}'";

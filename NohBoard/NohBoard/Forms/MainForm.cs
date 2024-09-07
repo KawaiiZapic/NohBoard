@@ -28,12 +28,7 @@ namespace ThoNohT.NohBoard.Forms
     using System.Drawing;
     using System.Drawing.Text;
     using System.Linq;
-    using System.Net.Http;
-    using System.Runtime.Serialization.Json;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.Windows.Forms;
-    using System.Xml;
     using ThoNohT.NohBoard.Keyboard.Styles;
     using Version = NohBoard.Version;
 
@@ -625,9 +620,11 @@ namespace ThoNohT.NohBoard.Forms
             if (!this.borderlessModeToolStripMenuItem.Checked) { 
                 this.FormBorderStyle = FormBorderStyle.FixedSingle;
                 this.TopMost = false;
+                this.ShowInTaskbar = true;
             } else {
                 this.FormBorderStyle = FormBorderStyle.None;
                 this.TopMost = true;
+                this.ShowInTaskbar = false;
             }
         }
     }

@@ -380,6 +380,7 @@ namespace ThoNohT.NohBoard.Forms
             FormClosing += MainForm_FormClosing;
             Load += MainForm_Load;
             ResizeEnd += MainForm_ResizeEnd;
+            DoubleClick += MainForm_DoubleClick;
             KeyUp += MainForm_KeyUp;
             MouseDown += MainForm_MouseDown;
             MouseMove += MainForm_MouseMove;

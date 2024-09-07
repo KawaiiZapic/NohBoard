@@ -618,7 +618,7 @@ namespace ThoNohT.NohBoard.Forms
         }
 
         private void borderlessModeToolStripMenuItem_Click(object sender, EventArgs e) {
-            if (!this.borderlessModeToolStripMenuItem.Checked) { 
+            if (!this.borderlessModeToolStripMenuItem.Checked) {
                 this.FormBorderStyle = FormBorderStyle.FixedSingle;
                 this.TopMost = false;
                 this.ShowInTaskbar = true;
@@ -627,6 +627,11 @@ namespace ThoNohT.NohBoard.Forms
                 this.TopMost = true;
                 this.ShowInTaskbar = false;
             }
+        }
+
+        private void MainForm_DoubleClick(object sender, EventArgs e) {
+            this.borderlessModeToolStripMenuItem.Checked = !this.borderlessModeToolStripMenuItem.Checked;
+            this.borderlessModeToolStripMenuItem_Click(sender, e);
         }
     }
 }
